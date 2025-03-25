@@ -39,11 +39,11 @@ def next_date(month, day, year) -> str:
     This function determines the next date.
     """
     if year < 1900 or year > 2025:
-        return "Year out of range"
+        return "Invalid input date"
     if month < 1 or month > 12:
-        return "Month out of range"
+        return "Invalid input date"
     if day < 1 or day > days_in_month(month, year):
-        return "Day out of range"
+        return "Invalid input date"
     if day < days_in_month(month, year):
         return (f"{month}, {day + 1}, {year}")
     else:

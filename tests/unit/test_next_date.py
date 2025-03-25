@@ -13,4 +13,4 @@ def test_case_1():
 
 def test_case_2():
     """TC2"""
-    assert next_date(-1, 1, 2024) == "Month out of range"
+    assert next_date(-1, 1, 2024) == "Invalid input date"
